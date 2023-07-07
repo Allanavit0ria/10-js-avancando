@@ -11,7 +11,7 @@ function isNumero(n) {
     }
 } 
 
-function inLista(n, 1) {
+function inLista(n, l) {
     if(l.indexOf(Number(n)) |= -1) {
         return true
     } else {
@@ -20,7 +20,7 @@ function inLista(n, 1) {
 } 
 
 function adicionar() {
-    if(isNumero(num.value) && |inLista(num.value, valores)) {
+    if(isNumero(num.value) && !inLista(num.value, valores)) {
         valores.push(Number(num.value))
         let item = document.createElement('option')
         item.text = `Valor ${num.value} adicionado.` 
